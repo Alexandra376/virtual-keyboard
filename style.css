@@ -199,5 +199,13 @@ body {
   height: 46px;
 }
 
+button:focus-visible {
+  outline: none;
+}
+
+.header__input:focus {
+  outline: none;
+}
+
 
 

@@ -12,7 +12,7 @@ function creatKeyBoard () {
 
   const textarea = document.createElement('textarea');
   textarea.className = "header__input";
-  textarea.ariaPlaceholder = "Enter your text....";
+  textarea.placeholder = "Enter your text...";
   textarea.focus();
   header.appendChild(textarea);
 
@@ -188,37 +188,7 @@ document.body.addEventListener('keyup', function(index){
           button_[j].classList.remove('active');
     }
   }
-})
-
-/*buttons with mouse*/
-
-for (let x of button_) {
-  x.addEventListener('mousedown', function() {
-    x.className = "active";
-    input_.innerHTML += x.innerHTML;
-  })
-}
-
-for (let y of button_) {
-  y.addEventListener('mouseup', function() {
-    y.className = '';
-  })
-}
-// space.addEventListener('mousedown', function() {
-//   space.classList.add('active');
-//   input_.innerHTML += "";
-// })
-// space.addEventListener('mouseup', function() {
-//   space.classList.remove('active');
-// })
-// function back() {
-//   delete_.className += "active";
-//   input_.innerHTML = input_.innerHTML.slice(0, -1);
-// }
-// delete_.onmousedown = back;
-// delete_.onmousedown = function () {
-//   delete_.classList.remove('active');
-// }
+});
 
 
 
