@@ -244,9 +244,6 @@ for (let x of button_) {
       }
     }
   });
-      
-
-  
 
 
 
