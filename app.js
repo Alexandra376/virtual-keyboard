@@ -149,9 +149,6 @@ function creatKeyBoard () {
   description.className = "description";
   description.textContent = "The keyboard was created on the macOS operating system. For to switch a language you have to press left ctrl + space."
   header.appendChild(description);
-
-  // const buttonSound = document.querySelector('button');
-  // buttonSound.onclick = new Audio("sounds/sound.mp3").play();
 }
 creatKeyBoard();
 
@@ -221,7 +218,23 @@ for (let x of button_) {
     delete_.classList.remove('active');
   }
 
+  document.body.addEventListener('keydown', function(e) {
+    for(let i = 0; i < button_.length; i++) {
+      let test = document.querySelectorAll(".keyboard-button")[i].textContent.toString();
+      if (e.code == 'CapsLock' && test.length === 1) {
+        button_[i].innerHTML = button_[i].textContent.toUpperCase()
+      }
+    }
+  });
 
+  document.body.addEventListener('keyup', function(e) {
+    for(let i = 0; i < button_.length; i++) {
+      let test = document.querySelectorAll(".keyboard-button")[i].textContent.toString();
+      if (e.code == 'CapsLock' && test.length === 1) {
+        button_[i].innerHTML = button_[i].textContent.toLowerCase();
+      }
+    }
+  });
 
   capsLock.addEventListener('mousedown', function() {
     for(let i = 0; i < button_.length; i++) {
@@ -231,6 +244,8 @@ for (let x of button_) {
       }
     }
   });
+
+
 
 
 
