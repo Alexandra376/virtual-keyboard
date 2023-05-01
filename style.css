@@ -11,26 +11,15 @@ body {
   font-size: 82px;
   text-align: center;
   color: #161414eb;
-  animation: neonGlow 2s infinite alternate;
+  text-shadow: 0 0 2px rgba(255,255,255,.8); 
+  margin: 0;
 }
 
 .description {
   font-family: 'Viaoda Libre', cursive;
   text-align: center;
   text-shadow: 0 0 2px rgba(255,255,255,.8); 
-  padding-top: 40px;
-}
-
-@keyframes neonGlow {
-
-  0% {
-    text-shadow: 0 0 10px rgba(255,255,255,.8), 0 0 20px rgba(255,255,255,.8), 0 0 22px  rgba(255,255,255,.8), 0 0 40px  rgba(111,113,199,.8), 0 0 60px  rgba(111,113,199,.8), 0 0 80px  rgba(111,113,199,.8), 0 0 100px rgba(111,113,199,.8), 0 0 140px rgba(111,113,199,.8), 0 0 200px rgba(111,113,199,.8);
-}
-
-  100% {
-    text-shadow: 0 0 2px rgba(255,255,255,.8), 0 0 8px rgba(255,255,255,.8), 0 0 10px rgba(255,255,255,.8), 0 0 20px rgba(111,113,199,.8), 0 0 30px rgba(111,113,199,.8), 0 0 40px rgba(66,220,219,.8), 0 0 50px rgba(66,220,219,.5), 0 0 80px rgba(66,220,219,.5);
-  }
-
+  color: #161414eb;
 }
 
 .header__input {
@@ -39,7 +28,7 @@ body {
   overflow: hidden;
   overflow-wrap: break-word;
   resize: horizontal;
-  height: 240px;
+  height: 180px;
   padding: 5px;
   font-size: 1.5rem;
   margin: 0 auto;
